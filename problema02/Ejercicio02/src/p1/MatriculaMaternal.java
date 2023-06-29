@@ -5,20 +5,20 @@
  */
 package p1;
 
+import p2.Matricula;
+
 /**
  *
  * @author reroes
  */
-public class MatriculaMaternal {
+public class MatriculaMaternal extends Matricula {
+
     private double tarifa;
-    
-        
-    public void establecerTarifa(){
+
+    @Override
+    public void establecerTarifa() {
         // tarifa = costo desayunos + costo almuerzo + costo medico
         tarifa = 50.2 + 40.2 + 80.2;
     }
-        
-    public double obtenerTarifa(){
-        return tarifa;
-    }
+
 }
