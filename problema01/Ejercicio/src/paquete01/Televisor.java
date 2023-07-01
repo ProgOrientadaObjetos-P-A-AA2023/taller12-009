@@ -1,16 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquete01;
 
-import java.util.ArrayList;
-
-/**
- *
- * @author reroes
- */
 public class Televisor {
 
     private String marca;
@@ -34,7 +23,11 @@ public class Televisor {
 
     @Override
     public String toString() {
+<<<<<<< HEAD
         return String.format("TV:%s\n%s\n",
+=======
+        return String.format("TV: %s - %.2f\n",
+>>>>>>> db38de575ec28b3bde4059de9ad1d96eb3a14e6c
                 obtenerMarca(),
                 obtenerPrecio());
     }

@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package p1;
 
+<<<<<<< HEAD
 import p2.Matricula;
 
 /**
@@ -20,6 +16,13 @@ public class MatriculaEscuela extends Matricula {
         // tarifa = costo libros + costo deportes + costo folletos + 
         //          costo uniformes
         tarifa = 50.2 + 40.2 + 140.2 + 200.4;
+=======
+public class MatriculaEscuela extends Matricula {
+
+    @Override
+    public void establecerTarifa() {
+        tarifa = 50.2 + 40.2 + 140.2 + 200.4;//431
+>>>>>>> db38de575ec28b3bde4059de9ad1d96eb3a14e6c
     }
 
 }

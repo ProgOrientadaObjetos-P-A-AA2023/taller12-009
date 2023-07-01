@@ -1,19 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package p2;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
+=======
+import p1.*;
+>>>>>>> db38de575ec28b3bde4059de9ad1d96eb3a14e6c
 
-/**
- *
- * @author reroes
- */
 public class TipoMatricula {
 
     private double promedioMatriculas;
+<<<<<<< HEAD
     //   private MatriculaCampamento campamento;
     // private MatriculaColegio colegio;
     //private MatriculaEscuela escuela;
@@ -51,13 +47,45 @@ public class TipoMatricula {
         return matriculas;
     }
 
+=======
+    private ArrayList<Matricula> matriculas;
+
+    public void establecerPromedioMatriculas() {
+        double suma = 0;
+
+        for (int i = 0; i < matriculas.size(); i++) {
+            suma = suma + matriculas.get(i).obtenerTarifa();
+        }
+
+        promedioMatriculas = suma / matriculas.size();
+    }
+
+    public void establecerMatriculas(ArrayList<Matricula> m) {
+        matriculas = m;
+    }
+
+>>>>>>> db38de575ec28b3bde4059de9ad1d96eb3a14e6c
     public double obtenerPromedioMatriculas() {
         return promedioMatriculas;
     }
 
+<<<<<<< HEAD
     @Override
     public String toString() {
         return "\nIPromedio Matriculas: " + promedioMatriculas;
 
     }
+=======
+    public ArrayList<Matricula> obtenerMatriculas() {
+        return matriculas;
+    }
+
+    @Override
+    public String toString() {
+        String mensaje = String.format("Promedio Tarifa: $%.2f\n",
+                promedioMatriculas);
+        return mensaje;
+    }
+
+>>>>>>> db38de575ec28b3bde4059de9ad1d96eb3a14e6c
 }
